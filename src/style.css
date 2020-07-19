@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #2199df;
+    text-decoration: none;
+}
+
+ul {
+    margin-left: 1.5rem;
+    list-style: none;
+}
+
+button, input[type="submit"] {
+    border: none;
+    background: none;
+    color: unset;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 1em 0;
+}
+
+
+.page {
+    padding: 1rem;
+}
+
+/* header */
+#header {
+    height: 50px;
+    background-color: #e02525;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .title {
+    margin: 0;
+    padding: 0 1rem;
+    color: #ffffff;
+}
+
+#header .auth-options {
+    display: flex;
+    height: 100%;
+}
+
+#header .auth-options button {
+    background-color: #b91b1b;
+    padding: 0 1rem;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+#header .auth-options button:hover {
+    background-color: #811c1c;
+}
+
+/* Forms */
+.form label, .form input {
+    display: block;
+}
+
+.form label {
+    margin-bottom: .2rem;
+}
+.form input {
+    margin-bottom: 1rem;
+}
+
+.form input[type="text"], .form input[type="email"], .form input[type="password"] {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    border: 1px solid #e4e4e4;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+} 
+
+.form input:focus {
+    border: 1px solid #2199df;
+    box-shadow: inset 0px 0px 10px rgba(32, 152, 221, 0.5);
+    outline: none;
+}
+
+.form input[type="submit"] {
+    border: 1px solid #149234;
+    background-color: #6aca82;
+    padding: 0.3rem 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.error-notice {
+    border: 1px solid #b91b1b;
+    background-color: #f7cdcd;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-notice button {
+    background-color: #df4b4b;
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+
+
+@media screen and (max-width: 550px) {
+    #header .title {
+        font-size: 1.2rem;
+    }
+
+    #header .auth-options button {
+        font-size: 0.9rem;
+        padding: 0 0.5rem;
+    }
+}
